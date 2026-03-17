@@ -60,7 +60,38 @@
         <div class="timeline-title">VC全裸事件</div>
         <div class="timeline-body">VCにて、ゆうだお、いちか、ぺぺとん、火花が雑談中の際突如現れた、でびっと氏がカメラを付けお風呂の中で全裸を配信した。それを見た皆は驚き。後から駆けつけた大マニ、あいえふ。2人も混乱していた。</div>
       </div>
+      <div class="timeline-hidden" id="timeline-more">
+        <div class="timeline-item">
+          <div class="timeline-date">2026/3/10</div>
+          <div class="timeline-title">第1回いちか共栄圏オフ会</div>
+          <div class="timeline-body">大マニ、シオンマニア、せーや、ぺぺとん、いちかで池袋エンカ。大マニがイケメンになっており皆驚き。ぺぺとんはせーやに金玉を蹴られ死亡。カラオケに行った。大マニは相変わらず歌がうまかった。そしてその後、ノリでいちかが⚪︎を飲み無事死亡。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2026/3/13</div>
+          <div class="timeline-title">いちか共栄圏襲撃</div>
+          <div class="timeline-body">モラル鯖によって侵略され管理人(いちか)のアカウントが3回も飛ばされるという事件が発生。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2026/3/14</div>
+          <div class="timeline-title">第2回VC全裸事件</div>
+          <div class="timeline-body">またしてもVCにて突如現れたでびっと氏がお風呂に入ってるシーンを配信。ばっちブツも映っていた。更に変なダンスまで踊り自らのケツをぺちんと叩いていた...。</div>
+        </div>
+      </div>
     </div>
+    <button class="read-more-btn" id="read-more-btn" onclick="toggleHistory()">続きを読む ▼</button>
+    <script>
+      function toggleHistory() {
+        var more = document.getElementById('timeline-more');
+        var btn = document.getElementById('read-more-btn');
+        if (more.classList.contains('show')) {
+          more.classList.remove('show');
+          btn.textContent = '続きを読む ▼';
+        } else {
+          more.classList.add('show');
+          btn.textContent = '閉じる ▲';
+        }
+      }
+    </script>
   </section>
 
   <!-- SNS -->
