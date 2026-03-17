@@ -256,6 +256,36 @@ nav a:hover {
   color: #ccc;
 }
 
+.timeline-hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.timeline-hidden.show {
+  max-height: 2000px;
+}
+
+.read-more-btn {
+  display: block;
+  margin: 32px auto 0;
+  padding: 12px 32px;
+  background: #c40000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.read-more-btn:hover {
+  background: #e00000;
+  transform: translateY(-2px);
+}
+
 /* ===== SNS ===== */
 #sns {
   background: #1a1a1a;
